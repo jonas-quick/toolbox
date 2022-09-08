@@ -1,65 +1,43 @@
 <!DOCTYPE html>
-<html>
-  
-<head>
-    <title>Calculator Design Using HTML Layout</title>
-    <link rel="stylesheet" href="calc.css">
-    <link rel="stylesheet" href="../style.css">
-    <script src="myscripts.js"></script>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+
+    
+    <link href="calc.css" rel="stylesheet" />
+    <link href="../style.css" rel="stylesheet" />
   </head>
 
-  
-  
-  
   <body>
-
     <div class="topnav">
       <a href="../index.html">Home</a>
-      <a class="active" href="calc.html">Calculator</a>
-      <a href="#contact">Nav2</a>
-      <a href="#about">Nav3</a>
+      <a class="active" href="calculator/calc.html">Calculator</a>
     </div>
-
-
+    
     <div class="container">
-      <div class="header">Calculator</div>
-      <input type="text" class="result">
-        <div class="first-row">
-          <input type="button" name="" value="&radic;" class="global">
-          <input type="button" name="" value="(" class="global">
-          <input type="button" name="" value=")" class="global">
-          <input type="button" name="" value="%" class="global">
-        </div>
-      <div class="second-row">
-        <input type="button" name="" value="7" class="global">
-        <input type="button" name="" value="8" class="global">
-        <input type="button" name="" value="9" class="global">
-        <input type="button" name="" value="/" class="global">
-      </div>
-      <div class="third-row">
-        <input type="button" name="" value="4" class="global">
-        <input type="button" name="" value="5" class="global">
-        <input type="button" name="" value="6" class="global">
-        <input type="button" name="" value="X" class="global">
-      </div>
-      <div class="fourth-row">
-        <input type="button" name="" value="1" class="global">
-        <input type="button" name="" value="2" class="global">
-        <input type="button" name="" value="3" class="global">
-        <input type="button" name="" value="-" class="global">
-      </div>
-      <div class="conflict">
-        <div class="left">
-          <input type="button" name="" value="0" class=" big">
-          <input type="button" name="" value="." class=" small">
-          <input type="button" name="" value="Del" class=" red small white-text top-margin">
-          <input type="button" name="" value="=" class=" green white-text big top-margin">
-        </div>
-        <div class="right">
-          <input type="button" name="" value="+" class="global grey plus">
+      <div class="calculator">
+        <div class="calculator__display">0</div>
+  
+        <div class="calculator__keys">
+          <button class="key--operator" data-action="add">+</button>
+          <button class="key--operator" data-action="subtract">-</button>
+          <button class="key--operator" data-action="multiply">&times;</button>
+          <button class="key--operator" data-action="divide">÷</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>0</button>
+          <button data-action="decimal">.</button>
+          <button data-action="clear">AC</button>
+          <button class="key--equal" data-action="calculate">=</button>
         </div>
       </div>
     </div>
   </body>
 </html>
-    
