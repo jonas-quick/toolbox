@@ -3,7 +3,6 @@
   <head>
     <title>Calculator</title>
 
-    <script src="calc.js"></script>
     <link href="calc.css" rel="stylesheet" />
     <link href="../style.css" rel="stylesheet" />
   </head>
@@ -14,9 +13,8 @@
       <a class="active" href="calculator/calc.html">Calculator</a>
     </div>
     
-      <div class="calculator">
-        <div class="calculator__display">0</div>
-  
+    <div class="calculator">
+      <div class="calculator__display">0</div>
       <div class="calculator__keys">
         <button class="key--operator" data-action="add">+</button>
         <button class="key--operator" data-action="subtract">-</button>
@@ -32,11 +30,11 @@
         <button class="numberKey">2</button>
         <button class="numberKey">3</button>
         <button class="numberKey">0</button>
-        <button data-action="decimal">.</button>
-        <button data-action="clear">AC</button>
+        <button class="numberKey" data-action="decimal" >.</button>
+        <button class="clear" data-action="clear" >AC</button>
         <button class="key--equal" data-action="calculate">=</button>
       </div>
     </div>
-     
+  <script src="calc.js"></script>
   </body>
 </html>
